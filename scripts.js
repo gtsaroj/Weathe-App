@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (data) {
                 document.querySelector('.searchedName').innerHTML = data.name;
                 document.querySelector('#city').innerHTML = data.name;
-                document.querySelector('.temp').innerHTML = `Temperature: ${data.main.temp} °C`;
+                document.querySelector('.temp').innerHTML = `Temperature: ${Math.round(data.main.temp)} °C`;
                 document.querySelector('.wind').innerHTML = `Wind: ${data.wind.deg}°`;
                 document.querySelector('.humidity').innerHTML = `Humidity: ${data.main.humidity}`;
                 document.querySelector('.Season').innerHTML = ` ${data.weather[0].description}`
